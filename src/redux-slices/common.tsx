@@ -16,17 +16,10 @@ interface type {
   status: string;
 }
 
-const val = {
-  firstname: "prajesh",
-  lastname: "awesome",
-  phonenumber: "789456213",
-  status: "active",
-};
-
 const initialState: AppState = {
   isSideBarOpen: false,
   isModalOpen: false,
-  allContacts: [val],
+  allContacts: [],
   editIndex: null,
   contactToEdit: {
     firstname: "",

@@ -4,6 +4,7 @@ import ContactCard from "../../components/contactcard/contactcard";
 import { useAppDispatch, useAppSelector } from "../../hooks";
 import { toggleModalMenuTrue } from "../../redux-slices/common";
 import Modal from "../../components/modal/modal";
+import NoResult from "../../assets/noresult.png";
 
 const ContactPage: React.FC = () => {
   const dispatch = useAppDispatch();
@@ -26,10 +27,28 @@ const ContactPage: React.FC = () => {
       </button>
 
       {/* Rendering all contacts cards */}
-      <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-        {AllContacts.map((item, index) => <ContactCard key={index} index={index} contact={item} />)}
-      </div>
 
+      {AllContacts.length === 0 ? (
+        <div className="h-[100%] w-full flex flex-col items-center justify-center">
+          <img
+            src={NoResult}
+            alt="noresult"
+            className="object-contain h-[50%] w-[100%]"
+          />
+          <p className="text-gray-400 sm: text-xs mb-2 lg: text-[13px]">
+            Look like there are no contacts added.
+          </p>
+          <p className="text-gray-400 text-center sm: text-xs lg: text-[13px]">
+            Please add new contact by pressing "Add Contact button on top left"
+          </p>
+        </div>
+      ) : (
+        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          {AllContacts.map((item, index) => (
+            <ContactCard key={index} index={index} contact={item} />
+          ))}
+        </div>
+      )}
       <Modal />
     </div>
   );
