@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+# Taiyo Assignment - Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Detailed explanation of task completed
+1. Typescript - ✅ Used
+2. Tailwind - ✅ Used
+3. React Query (Tanstack Query) - ✅ Used
+4. Implemented charts - ✅ Used
+5. Redux (Redux Toolkit) - ✅ Used
+6. React Browser Router V6 - ✅ Used
+7. React Leaftlet - ✅ Used
+8. Responsive website - ✅ Implemented
 
-## Available Scripts
+## How to run the project
+1. First clone the repo.
+   ```bash
+   https://github.com/prajesh9921/Taiyo_Assignment.git
+   ```
+2. Install all the dependencies by running in terminal.
+   ```bash
+   npm install
+   ```
+3. Start the project
+   ```bash
+   npm start
+   ```
 
-In the project directory, you can run:
+## Deployed on Netlify - Live link
+- live link ```https://taiyo-assignment-management-app.netlify.app/```
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Brieft about APIs used
+1. I have used all three APIs to visualize the data.
+2. For this api - Worldwide data of cases: https://disease.sh/v3/covid-19/all. I have used line char to show the data.
+3. Country Specific data of cases: https://disease.sh/v3/covid-19/countries - For this API I have used react leaflet for showing data on the map with markers and popup
+4. Graph data for cases with date: https://disease.sh/v3/covid-19/historical/all?lastdays=all - Again, I have decided to use the line graph to show the trend between the two data's. 
