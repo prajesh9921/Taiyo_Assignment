@@ -39,7 +39,7 @@ const ContactPage: React.FC = () => {
             Look like there are no contacts added.
           </p>
           <p className="text-gray-400 text-center sm: text-xs lg: text-[13px]">
-            Please add new contact by pressing "Add Contact button on top left"
+            Please add new contact by pressing "Add Contact" button on top left
           </p>
         </div>
       ) : (
