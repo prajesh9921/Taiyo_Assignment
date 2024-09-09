@@ -97,7 +97,7 @@ export default function Modal() {
         id="authentication-modal"
         className="fixed inset-0 z-50 flex justify-center items-center w-full h-full bg-gray-800 bg-opacity-75"
       >
-        <div className="relative p-4 w-full max-w-md max-h-full bg-white rounded-lg shadow dark:bg-gray-700 sm: w-[95%]">
+        <div className="relative p-4 w-full max-w-md max-h-full bg-white rounded-lg shadow dark:bg-gray-700 sm: w-[90%]">
           {/* Modal Header */}
           <div className="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
             <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
